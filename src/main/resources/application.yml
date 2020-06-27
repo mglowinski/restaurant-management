@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: postgres
+    password: test
+    url: jdbc:postgresql://localhost:5432/restaurants
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
